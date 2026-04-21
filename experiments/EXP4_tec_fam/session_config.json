@@ -1,0 +1,28 @@
+{
+  "experiment": "EXP4_TEC_FAM",
+  "MODEL_NAME": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "INSTR_ORDER": [
+    "cello",
+    "viola",
+    "violin2",
+    "violin1"
+  ],
+  "FOCUS_FAM": [
+    "bowed",
+    "col_legno",
+    "harmonic",
+    "plucked"
+  ],
+  "N_FAM": 4,
+  "CLASS_WEIGHTS_FAM": [
+    0.8726539611816406,
+    1.0710853338241577,
+    1.1288293600082397,
+    0.9274313449859619
+  ],
+  "TARGET_FRAMES": 256,
+  "SEED": 1337,
+  "train_size": 200960,
+  "val_size": 43064,
+  "test_size": 43064
+}

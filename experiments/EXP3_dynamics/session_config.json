@@ -1,0 +1,24 @@
+{
+  "MODEL_NAME": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "FOCUS_DYN": [
+    "pianissimo",
+    "piano",
+    "mezzo-piano",
+    "forte",
+    "fortissimo"
+  ],
+  "TARGET_FRAMES": 256,
+  "INSTR_ORDER": [
+    "cello",
+    "viola",
+    "violin2",
+    "violin1"
+  ],
+  "CLASS_WEIGHTS_DYN": [
+    0.9977630376815796,
+    1.007306456565857,
+    0.9990605711936951,
+    0.9982884526252747,
+    0.997581422328949
+  ]
+}

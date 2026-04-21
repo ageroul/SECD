@@ -1,0 +1,16 @@
+{
+  "TASK_NAME": "EXP1 ensemble-size classification",
+  "TASK_OBJECTIVE": "Classify whether the audio contains a duo (2), trio (3), or quartet (4) of string instruments.",
+  "MODEL_NAME": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "FOCUS": [
+    "duo",
+    "trio",
+    "quartet"
+  ],
+  "TARGET_FRAMES": 256,
+  "CLASS_WEIGHTS": [
+    0.9994794726371765,
+    1.001346468925476,
+    0.9991739988327026
+  ]
+}

@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Model checkpoints & large binaries
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+hf_ckpt/
+checkpoints/
+
+# Numpy arrays & heavy data artifacts
+*.npy
+*.npz
+
+# Audio & cache
+*.wav
+*.mp3
+*.flac
+*.ogg
+cache/
+__cache__/
+
+# Splits & generated manifests (reproducible from notebook)
+*_split_indices.npz
+*_manifest.csv
+class_weights_*.npy
+class_weights_*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+latest_run.txt
+trainer_state.json
+training_args.bin

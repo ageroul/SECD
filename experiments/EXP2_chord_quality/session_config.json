@@ -1,0 +1,24 @@
+{
+  "TASK_NAME": "EXP2 triad chord-type classification",
+  "TASK_OBJECTIVE": "Global triad chord-quality classification from precomputed mel-spectrogram inputs.",
+  "MODEL_NAME": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "FOCUS": [
+    "major",
+    "minor",
+    "diminished",
+    "augmented"
+  ],
+  "TARGET_FRAMES": 256,
+  "INSTR_ORDER": [
+    "cello",
+    "viola",
+    "violin2",
+    "violin1"
+  ],
+  "CLASS_WEIGHTS": [
+    1.0015027523040771,
+    1.001562237739563,
+    1.0017107725143433,
+    0.9952242374420166
+  ]
+}
