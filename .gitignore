@@ -38,6 +38,13 @@ checkpoints/
 cache/
 __cache__/
 
+# Keep the GitHub-sized Mini-SECD demo package tracked.
+!mini_secd_demo/
+!mini_secd_demo/**/
+!mini_secd_demo/**/*.csv
+!mini_secd_demo/**/*.npy
+!mini_secd_demo/**/*.wav
+
 # Splits & generated manifests (reproducible from notebook)
 *_split_indices.npz
 *_manifest.csv

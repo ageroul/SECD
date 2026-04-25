@@ -1,6 +1,9 @@
+
 # SECD — String Ensemble Chord Dataset: Experiments
 
-This repository contains the experiment notebooks and results accompanying the paper:
+This branch includes a Mini-SECD demo dataset intended for execution and validation only.  
+> It is not suitable for reproducing the reported experimental results.
+
 
 > **[Paper title]**
 > [Authors] · [Venue, Year]
@@ -13,10 +16,11 @@ This repository contains the experiment notebooks and results accompanying the p
 ```
 SECD/
 ├── dataset/                        ← Dataset description & access info
+├── mini_secd_demo/                 ← GitHub-friendly demo dataset
 ├── experiments/
 │   ├── EXP1_ensemble_size/         ← Classify duo / trio / quartet
 │   ├── EXP2_chord_quality/         ← Classify chord quality
-│   ├── EXP3_chord_root/            ← Classify chord root
+│   ├── EXP3_dynamics/              ← Classify dynamics
 │   └── EXP4_tec_fam/              ← Classify playing technique family
 └── requirements.txt
 ```
@@ -42,8 +46,61 @@ cd SECD
 pip install -r requirements.txt
 ```
 
-All experiments are self-contained Google Colab notebooks.
-Open each `.ipynb` directly in Colab — no local setup required beyond the dataset path configuration in **Cell 0**.
+The experiments are provided as Jupyter/Colab notebooks. They require the Python dependencies in `requirements.txt`, access to the AST backbone weights, and either the included Mini-SECD demo dataset or the full SECD dataset.
+
+---
+
+## Mini-SECD Demo Dataset
+
+This repository includes a small demo dataset at `mini_secd_demo/`. **Mini-SECD is for notebook execution and pipeline validation only. It is not a reproducibility dataset and should not be used to report or compare scientific metrics.**
+
+Mini-SECD contains real precomputed SECD mel-spectrogram tensors (`.npy`) copied from the full SECD mel cache. The WAV files in `mini_secd_demo/` are tiny valid silent placeholders; they exist only because the original notebooks check for audio-path existence before loading cached mel tensors. They are not the source audio used in the paper.
+
+The CSV metadata in Mini-SECD is reconstructed from mel filenames and SECD schema conventions for demo execution. It is not copied from the original experiment CSV metadata. Use Mini-SECD to verify that data loading, filtering, splitting, label extraction, dataset construction, and short demo-mode execution work end to end.
+
+---
+
+## Reproducibility
+
+The metrics shown above come from the full experimental setup. Reproducing those results requires:
+
+- the full SECD dataset,
+- the full precomputed SECD mel cache,
+- the original/full metadata,
+- the required Python dependencies,
+- access to the pretrained AST backbone weights,
+- and a suitable GPU runtime.
+
+The notebooks preserve the original experiment definitions: tasks, labels, model architectures, losses, and evaluation metrics are unchanged. Demo mode changes only runtime settings such as dataset root, device selection, dataloader workers, batch size, and the number of training steps. These changes make the notebooks easier to execute on normal machines, but they do not turn Mini-SECD into a paper-results reproduction package.
+
+---
+
+## Quick Start
+
+Install dependencies, then open any notebook under `experiments/`.
+
+```bash
+pip install -r requirements.txt
+```
+
+By default, when `mini_secd_demo/` is present, notebooks run in demo mode:
+
+```python
+RUN_MODE = "demo"
+SECD_BASE = "./mini_secd_demo"
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+```
+
+Demo mode is suitable for checking that the notebooks execute and that the pipeline is wired correctly. It is not suitable for reproducing or validating the reported paper scores.
+
+To use the full dataset instead, set `SECD_RUN_MODE=full` and point `SECD_BASE` at the full SECD dataset root before running the notebooks:
+
+```bash
+export SECD_RUN_MODE=full
+export SECD_BASE=/path/to/full/SECD
+```
+
+CPU execution is supported for demo runs. Full training remains GPU-oriented and can be slow or impractical on CPU.
 
 ---
 
