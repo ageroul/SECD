@@ -1,8 +1,8 @@
 
 # SECD — String Ensemble Chord Dataset: Experiments
 
-This branch includes a Mini-SECD demo dataset intended for execution and validation only.  
-> It is not suitable for reproducing the reported experimental results.
+This branch is intended for demo execution only. It is not the branch for reproducing the reported paper results. 
+It is not suitable for reproducing the reported experimental results.
 
 
 > **[Paper title]**
