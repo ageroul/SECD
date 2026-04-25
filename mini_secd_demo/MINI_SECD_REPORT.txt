@@ -1,0 +1,52 @@
+Mini-SECD demo report
+=====================
+Output folder: /Volumes/SECD FINAL ALL EXP/ΔΕΝ ΑΓΓΙΖΩ ΤΙΠΟΤΑ ΑΠΟ ΕΔΩ READ ONLY/mini_secd_demo
+Seed: 20260425
+Total samples: 1600
+Total size bytes: 211150963
+WAV strategy: {'silent_placeholder': 1600}
+Missing mel files: 0
+
+Counts per group:
+  7th_chords_loose: 267
+  7th_chords_strict: 204
+  harmonic_intervals_loose: 245
+  harmonic_intervals_strict: 181
+  triads_loose: 380
+  triads_strict: 323
+
+Counts per CSV:
+  7th_chords_loose/dominant_seventh_loose.csv: 64
+  7th_chords_loose/half_diminished_seventh_loose.csv: 65
+  7th_chords_loose/major_seventh_loose.csv: 71
+  7th_chords_loose/minor_seventh_loose.csv: 67
+  7th_chords_strict/dominant_seventh_strict.csv: 55
+  7th_chords_strict/half_diminished_seventh_strict.csv: 48
+  7th_chords_strict/major_seventh_strict.csv: 44
+  7th_chords_strict/minor_seventh_strict.csv: 57
+  harmonic_intervals_loose/cello_viola_loose.csv: 84
+  harmonic_intervals_loose/cello_violin_loose.csv: 89
+  harmonic_intervals_loose/viola_violin_loose.csv: 72
+  harmonic_intervals_strict/cello_viola_strict.csv: 60
+  harmonic_intervals_strict/cello_violin_strict.csv: 50
+  harmonic_intervals_strict/viola_violin_strict.csv: 71
+  triads_loose/triads_augmented_loose.csv: 80
+  triads_loose/triads_diminished_loose.csv: 103
+  triads_loose/triads_major_loose.csv: 95
+  triads_loose/triads_minor_loose.csv: 102
+  triads_strict/triads_augmented_strict.csv: 89
+  triads_strict/triads_diminished_strict.csv: 76
+  triads_strict/triads_major_strict.csv: 87
+  triads_strict/triads_minor_strict.csv: 71
+
+Validation:
+  selected_samples: 1600
+  missing_mel: 0
+  csv_files: 22
+  all_selected_mels_exist: True
+  split_counts: Counter({'train': 1125, 'test': 287, 'val': 188})
+
+Limitations:
+  Original composition CSV files were not present in this dataset copy.
+  CSV rows are reconstructed from real mel cache filenames and notebook-observed schema conventions.
+  Real solo WAV files were not present; silent valid WAV placeholders are used.
