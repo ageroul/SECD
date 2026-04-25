@@ -41,7 +41,7 @@ SECD/
 ## Setup
 
 ```bash
-git clone https://github.com/[your-username]/SECD.git
+git clone https://github.com/ageroul/SECD.git
 cd SECD
 pip install -r requirements.txt
 ```
