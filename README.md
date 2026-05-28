@@ -107,6 +107,18 @@ All experiments use the [Audio Spectrogram Transformer (AST)](https://huggingfac
 
 ---
 
+## License and Citation
+
+The GitHub code and documentation in this repository are released under the MIT License.
+
+Mini-SECD is provided only as a lightweight demo and pipeline-validation package. It is not the official full SECD dataset and is not intended for reproducing the reported benchmark metrics.
+
+If you use SECD, Mini-SECD, the benchmark notebooks, or these GitHub materials in academic work, please cite the official SECD Zenodo DOI and/or the accompanying paper once available. The official full SECD dataset release is archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.15547207
+
+---
+
 ## Citation
 
 ```bibtex

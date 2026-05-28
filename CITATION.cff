@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use SECD, Mini-SECD, the benchmark notebooks, or this GitHub repository in academic work, please cite the official SECD Zenodo DOI and the accompanying paper once available."
+title: "SECD — String Ensemble Chord Dataset"
+doi: "10.5281/zenodo.15547207"
+url: "https://github.com/ageroul/SECD"
+repository-code: "https://github.com/ageroul/SECD"
+license: "MIT"
+type: "dataset"
+abstract: "Public GitHub companion materials for the SECD benchmark experiments, including Mini-SECD demo materials, benchmark notebooks, metrics, figures, and lightweight reproducibility/demo materials. The official full SECD dataset release is archived on Zenodo."
+keywords:
+  - "SECD"
+  - "String Ensemble Chord Dataset"
+  - "audio dataset"
+  - "music information retrieval"
+  - "benchmark"
