@@ -1,13 +1,6 @@
-
 # SECD — String Ensemble Chord Dataset: Experiments
 
-This branch is intended for demo execution only. It is not the branch for reproducing the reported paper results. 
-It is not suitable for reproducing the reported experimental results.
-
-
-> **[Paper title]**
-> [Authors] · [Venue, Year]
-> [DOI / arXiv link]
+This repository provides the public GitHub companion materials for the SECD benchmark experiments, including Mini-SECD, benchmark notebooks, metrics, figures, and lightweight reproducibility/demo materials; the official full SECD dataset release is archived on Zenodo at https://doi.org/10.5281/zenodo.15547207, and the accompanying SECD paper citation remains pending publication.
 
 ---
 
@@ -62,7 +55,11 @@ The CSV metadata in Mini-SECD is reconstructed from mel filenames and SECD schem
 
 ## Reproducibility
 
-The metrics shown above come from the full experimental setup. Reproducing those results requires:
+The metrics shown above come from the full experimental setup. Reproducing those results requires the official full SECD release on Zenodo:
+
+https://doi.org/10.5281/zenodo.15547207
+
+Full metric reproduction also requires:
 
 - the full SECD dataset,
 - the full precomputed SECD mel cache,
@@ -113,11 +110,11 @@ All experiments use the [Audio Spectrogram Transformer (AST)](https://huggingfac
 ## Citation
 
 ```bibtex
-@article{[cite_key],
-  title   = {[Paper title]},
-  author  = {[Authors]},
-  journal = {[Venue]},
-  year    = {[Year]},
-  url     = {[URL]}
+@misc{secd_dataset_2026,
+  title = {SECD: String Ensemble Chord Dataset},
+  note  = {Official full dataset release archived on Zenodo. Paper citation pending publication.},
+  year  = {2026},
+  doi   = {10.5281/zenodo.15547207},
+  url   = {https://doi.org/10.5281/zenodo.15547207}
 }
 ```

@@ -1,6 +1,6 @@
 Mini-SECD demo report
 =====================
-Output folder: /Volumes/SECD FINAL ALL EXP/ΔΕΝ ΑΓΓΙΖΩ ΤΙΠΟΤΑ ΑΠΟ ΕΔΩ READ ONLY/mini_secd_demo
+Output folder: mini_secd_demo
 Seed: 20260425
 Total samples: 1600
 Total size bytes: 211150963

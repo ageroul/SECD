@@ -1,6 +1,10 @@
 # SECD — String Ensemble Chord Dataset
 
-The SECD dataset is introduced in the accompanying paper (see citation below).
+The official full SECD dataset release is archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.15547207
+
+The accompanying SECD paper is pending publication. Final paper metadata will be added when available.
 
 ## Format
 
@@ -16,4 +20,6 @@ Metadata is provided as CSV files, one per subset, with the following fields:
 
 ## Access
 
-Dataset access instructions and download links will be provided upon paper publication.
+Use the Zenodo archive above as the official full SECD release.
+
+The GitHub repository contains a separate Mini-SECD demo package at `mini_secd_demo/`. Mini-SECD is intended for lightweight notebook execution and pipeline validation only; it is not the full dataset and should not be used to reproduce or compare the reported benchmark metrics.
