@@ -1,6 +1,14 @@
-# SECD — String Ensemble Chord Dataset: Experiments
+# SECD — String Ensemble Chords Dataset: Experiments
 
-This repository provides the public GitHub companion materials for the SECD benchmark experiments, including Mini-SECD, benchmark notebooks, metrics, figures, and lightweight reproducibility/demo materials; the official full SECD dataset release is archived on Zenodo at https://doi.org/10.5281/zenodo.15547207, and the accompanying SECD paper citation remains pending publication.
+This repository provides the public GitHub companion materials for the SECD benchmark experiments, including Mini-SECD, benchmark notebooks, metrics, figures, and lightweight reproducibility/demo materials.
+
+The canonical archival and versioned release of the full SECD dataset is available on Zenodo at https://doi.org/10.5281/zenodo.15547207, while an ML-native distribution with embedded audio, six dataset configurations, and an interactive Dataset Viewer is available on Hugging Face at https://huggingface.co/datasets/ageroul/SECD.
+
+The associated peer-reviewed article is:
+
+**SECD: A String Ensemble Chords Dataset for Multi-Task Audio Classification**  
+*Acoustics*, 2026.  
+https://doi.org/10.3390/acoustics8030048
 
 ---
 
@@ -17,6 +25,16 @@ SECD/
 │   └── EXP4_tec_fam/              ← Classify playing technique family
 └── requirements.txt
 ```
+
+---
+
+## Dataset Access
+
+- **Hugging Face:** https://huggingface.co/datasets/ageroul/SECD  
+  ML-native distribution with embedded audio, six configurations, interactive Dataset Viewer, and direct loading through the Hugging Face `datasets` library.
+
+- **Zenodo:** https://doi.org/10.5281/zenodo.15547207  
+  Canonical archival and versioned release of the full SECD dataset.
 
 ---
 
@@ -113,7 +131,7 @@ The GitHub code and documentation in this repository are released under the MIT 
 
 Mini-SECD is provided only as a lightweight demo and pipeline-validation package. It is not the official full SECD dataset and is not intended for reproducing the reported benchmark metrics.
 
-If you use SECD, Mini-SECD, the benchmark notebooks, or these GitHub materials in academic work, please cite the official SECD Zenodo DOI and/or the accompanying paper once available. The official full SECD dataset release is archived on Zenodo:
+If you use SECD, Mini-SECD, the benchmark notebooks, or these GitHub materials in academic work, please cite the official SECD dataset release and the associated peer-reviewed article where appropriate. The official full SECD dataset release is archived on Zenodo:
 
 https://doi.org/10.5281/zenodo.15547207
 
@@ -121,12 +139,30 @@ https://doi.org/10.5281/zenodo.15547207
 
 ## Citation
 
+### Dataset
+
 ```bibtex
-@misc{secd_dataset_2026,
-  title = {SECD: String Ensemble Chord Dataset},
-  note  = {Official full dataset release archived on Zenodo. Paper citation pending publication.},
-  year  = {2026},
-  doi   = {10.5281/zenodo.15547207},
-  url   = {https://doi.org/10.5281/zenodo.15547207}
+@dataset{secd_dataset_2026,
+  title     = {SECD: String Ensemble Chords Dataset},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.15547207},
+  url       = {https://doi.org/10.5281/zenodo.15547207}
 }
+```
+
+### Article
+
+```bibtex
+@article{secd_2026,
+  title   = {SECD: A String Ensemble Chords Dataset for Multi-Task Audio Classification},
+  journal = {Acoustics},
+  year    = {2026},
+  volume  = {8},
+  number  = {3},
+  article = {48},
+  doi     = {10.3390/acoustics8030048},
+  url     = {https://doi.org/10.3390/acoustics8030048}
+}
+```
 ```
